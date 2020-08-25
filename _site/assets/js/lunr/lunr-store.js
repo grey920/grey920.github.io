@@ -401,8 +401,8 @@ var store = [{
         "url": "http://localhost:4000/layout/uncategorized/layout-header-video/",
         "teaser": "http://localhost:4000/assets/images/background.jpg"
       },{
-        "title": "new post for test",
-        "excerpt":"사랑받는 신입 개발자 되기 by 드림코더 엘리 어떻게 하면 회사에서, 팀에서 필요로 하는 일들을! 어떻게 나의 가치를 우리 팀에 필요로 하는 곳에 쓸 수 있을까 고민하기 솔선수범, 책임감 있게, 성실하게 회사 생활하기 “동료들, 선배들을 도와주고, 도움 받으면 보답하기” 솔선수범 문서화 겪고 설치하는 환경설정, 팀별 프로세스, 프로젝트 관련 문서 등을 다음...","categories": ["Devlog"],
+        "title": "사랑받는 신입 개발자 되기",
+        "excerpt":"by 드림코딩 엘리 어떻게 하면 회사에서, 팀에서 필요로 하는 일들을! 어떻게 나의 가치를 우리 팀에 필요로 하는 곳에 쓸 수 있을까 고민하기 솔선수범, 책임감 있게, 성실하게 회사 생활하기 “동료들, 선배들을 도와주고, 도움 받으면 보답하기” 솔선수범 문서화 겪고 설치하는 환경설정, 팀별 프로세스, 프로젝트 관련 문서 등을 다음 사람 또는 팀을 위해...","categories": ["Devlog"],
         "tags": ["tip"],
         "url": "http://localhost:4000/devlog/test-post/",
         "teaser": "http://localhost:4000/assets/images/background.jpg"
