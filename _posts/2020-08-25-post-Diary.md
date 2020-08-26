@@ -1,5 +1,5 @@
 ---
-title: 2020-08-25 TIL
+title: 2020-08-25 일기
 header:
   image: assets/images/bg-header2.jpg
   caption: 'Photo credit: [**Unsplash**](https://unsplash.com)'
