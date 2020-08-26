@@ -11,6 +11,12 @@ var store = [{
         "url": "http://localhost:4000/devlog/test-post/",
         "teaser": "http://localhost:4000/assets/images/background.jpg"
       },{
+        "title": "[자료구조] List",
+        "excerpt":"생활코딩 DataStructure 강의 정리 List의 Key Point!! 순서가 있다 중복을 허용한다 Array와 List의 차이점 Array 데이터의 저장 위치, 즉 Index가 중요하다 List 엘리먼트(데이터)의 순서가 더 중요하다 예) 데이터를 추가하는 경우 이러한 데이터가 있을 때, 배열의 경우 3번 인덱스에 데이터를 추가한다면 원본의 데이터를 덮어쓰게 된다. 리스트의 경우 기존 데이터를 한 칸...","categories": ["자료구조"],
+        "tags": ["자료구조","List","Array"],
+        "url": "http://localhost:4000/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/list/",
+        "teaser": "http://localhost:4000/assets/images/background.jpg"
+      },{
         "title": "github.io 블로그 시작하기",
         "excerpt":"GitHub Blog 서비스인 github.io 블로그 시작하기로 했다. GitHub Blog 서비스의 이름은 Pages이다. Pages가 다른 블로그 플랫폼 보다 편한 것 같아서 마음에 든다. 다른 사람들도 같이 많이 사용했으면 좋겠다는 생각이 든다. YFM에서 정의한 제목을 이중 괄호 구문으로 본문에 추가할 수 있다. 이 글의 제목은 github.io 블로그 시작하기이고 마지막으로 수정된 시간은 2020-08-26...","categories": ["Blog"],
         "tags": ["Blog"],

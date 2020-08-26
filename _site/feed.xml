@@ -1,4 +1,95 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-26T11:33:06+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Grey’s Devlog</title><subtitle>우직하게 기록하는 연습을 위한 블로그</subtitle><author><name>정겨운</name><email>gyuwoonj@gmail.com</email></author><entry><title type="html">github.io 블로그 시작하기</title><link href="http://localhost:4000/blog/test-devinlife-post/" rel="alternate" type="text/html" title="github.io 블로그 시작하기" /><published>2020-08-26T00:00:00+09:00</published><updated>2020-08-26T22:06:00+09:00</updated><id>http://localhost:4000/blog/test-devinlife-post</id><content type="html" xml:base="http://localhost:4000/blog/test-devinlife-post/">&lt;p&gt;GitHub Blog 서비스인 github.io 블로그 시작하기로 했다.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-26T11:53:45+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Grey’s Devlog</title><subtitle>우직하게 기록하는 연습을 위한 블로그</subtitle><author><name>정겨운</name><email>gyuwoonj@gmail.com</email></author><entry><title type="html">[자료구조] List</title><link href="http://localhost:4000/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/list/" rel="alternate" type="text/html" title="[자료구조] List" /><published>2020-08-26T00:00:00+09:00</published><updated>2020-08-26T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/list</id><content type="html" xml:base="http://localhost:4000/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/list/">&lt;p&gt;&lt;a href=&quot;https://youtu.be/186Q7eippsI&quot;&gt;생활코딩 DataStructure 강의&lt;/a&gt; 정리&lt;/p&gt;
+
+&lt;h1 id=&quot;list의-key-point&quot;&gt;List의 Key Point!!&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;순서가 있다&lt;/li&gt;
+  &lt;li&gt;중복을 허용한다&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;array와-list의-차이점&quot;&gt;Array와 List의 차이점&lt;/h1&gt;
+
+&lt;h2 id=&quot;array&quot;&gt;Array&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;데이터의 저장 위치, 즉 &lt;strong&gt;Index&lt;/strong&gt;가 중요하다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;list&quot;&gt;List&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;엘리먼트(데이터)의 &lt;strong&gt;순서&lt;/strong&gt;가 더 중요하다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;예) 데이터를 추가하는 경우 &lt;br /&gt;
+&lt;img src=&quot;https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/module/1335/2881.png&quot; alt=&quot;https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/module/1335/2881.png&quot; /&gt; &lt;br /&gt;
+이러한 데이터가 있을 때,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/module/1335/2882.png&quot; alt=&quot;https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/module/1335/2882.png&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;배열의 경우 3번 인덱스에 데이터를 추가한다면 원본의 데이터를 &lt;strong&gt;덮어쓰게&lt;/strong&gt; 된다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/module/1335/2883.png&quot; alt=&quot;https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/module/1335/2883.png&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;리스트의 경우 &lt;strong&gt;기존 데이터를 한 칸 뒤로 밀고&lt;/strong&gt;(인덱스 3번의 값이 4번으로 이동), 빈공간에 데이터를 추가한다.(새로운 인덱스 3번이 됨)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;예) 데이터를 삭제하는 경우&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/module/1335/2879.png&quot; alt=&quot;배열데이터삭제&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;배열의 경우 데이터를 삭제할 시 비어있는 상태를 유지한다.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;인덱스&lt;/strong&gt;가 변하지 않는다 ⇒ 인덱스는 값에 대한 유일무이한 식별자이다!&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;리스트는 3번 데이터가 사라지면 4번 데이터가 앞으로 전진한다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;list의-장점&quot;&gt;List의 장점&lt;/h1&gt;
+
+&lt;h3 id=&quot;데이터가-연속적이다-즉-비어있는-데이터가-없다&quot;&gt;데이터가 연속적이다. 즉, 비어있는 데이터가 없다&lt;/h3&gt;
+
+&lt;p&gt;⇒ for문 등을 통해 순회 처리를 하는 경우 데이터가 비어 있는지 체크할 필요가 없다!&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Array는 1.순회하는 과정에서 빈 공간을 체크해야 한다 &amp;amp;&amp;amp; 2.데이터를 삭제하는 경우 빈 공간이 남아 있어서 메모리 차지가 크다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;list의-기능&quot;&gt;List의 기능&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;✨&lt;strong&gt;처음, 끝, 중간&lt;/strong&gt;에 엘리먼트를 &lt;strong&gt;추가 / 삭제&lt;/strong&gt;하는 기능&lt;/li&gt;
+  &lt;li&gt;데이터가 List에 있는지 없는지 체크하는 기능&lt;/li&gt;
+  &lt;li&gt;리스트의 모든 데이터에 접근할 수 있는 기능&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;언어별-비교&quot;&gt;언어별 비교&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;C : 리스트를 지원하지 않는다. → 직접 만들거나 라이브러리를 사용해야 함&lt;/li&gt;
+  &lt;li&gt;JavaScript : 배열이 리스트&lt;/li&gt;
+  &lt;li&gt;파이썬 : 리스트가 배열&lt;/li&gt;
+  &lt;li&gt;JAVA : 배열과 리스트를 독립적으로 지원한다.
+    &lt;ul&gt;
+      &lt;li&gt;List를 두 개 지원 (LinkedList / ArrayList)&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/module/1335/2885.png&quot; alt=&quot;https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/module/1335/2885.png&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;-컨셉이-중요하다&quot;&gt;+) 컨셉이 중요하다&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;각각의 자료구조의 중심 컨셉이 무엇인지 파악하는 것이 중요하다!🌟&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>정겨운</name><email>gyuwoonj@gmail.com</email></author><category term="자료구조" /><category term="자료구조" /><category term="List" /><category term="Array" /><summary type="html">배열과의 차이점과 List 설명</summary></entry><entry><title type="html">github.io 블로그 시작하기</title><link href="http://localhost:4000/blog/test-devinlife-post/" rel="alternate" type="text/html" title="github.io 블로그 시작하기" /><published>2020-08-26T00:00:00+09:00</published><updated>2020-08-26T22:06:00+09:00</updated><id>http://localhost:4000/blog/test-devinlife-post</id><content type="html" xml:base="http://localhost:4000/blog/test-devinlife-post/">&lt;p&gt;GitHub Blog 서비스인 github.io 블로그 시작하기로 했다.
 GitHub Blog 서비스의 이름은 Pages이다.&lt;/p&gt;
 
 &lt;p&gt;Pages가 다른 블로그 플랫폼 보다 편한 것 같아서 마음에 든다.
