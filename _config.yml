@@ -27,7 +27,7 @@ repository               : "grey920/grey920.github.io" # GitHub username/repo-na
 teaser                   : "/assets/images/bg-header.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"  "/assets/images/logo.png"
 masthead_title           : "성장하는 개발자 Grey's Devlog" # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
