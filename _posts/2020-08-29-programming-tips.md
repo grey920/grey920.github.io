@@ -1,5 +1,6 @@
 ---
 title: "프로그래밍 잘하고 싶다면 코드는 '이렇게' 짜세요"
+excerpt: "초보개발자 개발 스킬업 1편"
 layout: single
 author_profile: true
 read_time: true
@@ -13,7 +14,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: 목차
-description: 초보개발자 개발 스킬업 1편
+description: 좋은 코드와 좋은 코드를 짜기 위해 어디에 집중해야 하는지 알아보기 
 ---
 
 출처 : [삼평동연구소](https://youtu.be/N7jcUb2T4RA)
