@@ -4,8 +4,7 @@ header:
   image: assets/images/bg-header2.jpg
   caption: 'Photo credit: [**Unsplash**](https://unsplash.com)'
 categories:
-- Devlog
-- TIL
+- Diary
 tags:
 - tdd
 - TIL
