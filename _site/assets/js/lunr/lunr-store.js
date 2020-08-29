@@ -28,4 +28,10 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/post-Diary/",
         "teaser": "http://localhost:4000/assets/images/bg-header.jpg"
+      },{
+        "title": "프로그래밍 잘하고 싶다면 코드는 '이렇게' 짜세요",
+        "excerpt":"출처 : 삼평동연구소 1. 프로그래밍 공부 좋은 코딩 습관을 갖추는 것에 집중하자 주석이 아닌 코드로 설명되는 명확한 코드를 짜는 것을 목표로 한다. 정확한 함수나 변수의 네이밍 명확한 인터페이스 불필요한 최적화 코드는 최대한 사용하지 말자 잘못 쓰면 오히려 가독성이 떨어진다. 주석이 꼭 필요한 곳, 반드시 필요한 곳에 주석 달기 ⇒ 나를...","categories": ["Devlog"],
+        "tags": ["tip"],
+        "url": "http://localhost:4000/devlog/programming-tips/",
+        "teaser": "http://localhost:4000/assets/images/bg-header.jpg"
       }]
