@@ -1,16 +1,13 @@
 ---
-title:  "[자료구조] Array List"
-excerpt: "Array List 설명"
-
+title: "[자료구조] Array List"
+excerpt: Array List 설명
 categories:
-  - 자료구조
+- DataStucture
 tags:
-  - 자료구조
-  - Array
+- Array
 toc: true
 toc_sticky: true
 toc_label: ArrayList
-# last_modified_at: 2019-04-13T08:06:00-05:00
 ---
 
 ArrayList?? 리스트를 만들 때 내부적으로 **배열**을 사용하는 것. ← 내부적으로는 배열이 사용되고 있기 때문에 배열의 인덱스를 이용하여 데이터를 가져온다!
