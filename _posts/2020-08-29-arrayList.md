@@ -1,12 +1,11 @@
 ---
-title:  "[자료구조] List"
-excerpt: "배열과의 차이점과 List 설명"
+title:  "[자료구조] Array List"
+excerpt: "Array List 설명"
 
 categories:
   - 자료구조
 tags:
   - 자료구조
-  - List
   - Array
 toc: true
 toc_sticky: true
