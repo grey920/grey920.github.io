@@ -2,7 +2,7 @@
 title: "[자료구조] Array List"
 excerpt: Array List 설명
 categories:
-- DataStucture
+- DataStructure
 tags:
 - Array
 toc: true
