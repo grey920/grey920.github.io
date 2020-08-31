@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://grey920.github.io/sitemap.xml

@@ -1,0 +1,81 @@
+I"<p>ArrayList?? 리스트를 만들 때 내부적으로 <strong>배열</strong>을 사용하는 것. ← 내부적으로는 배열이 사용되고 있기 때문에 배열의 인덱스를 이용하여 데이터를 가져온다!</p>
+
+<h1 id="자바에서-arraylist-사용하기">자바에서 ArrayList 사용하기</h1>
+
+<p>자바는 컬렉션 프레임워크라는 자체적인 라이브러리 안에 ArrayList data structure를 기본적으로 내장하고 있다. ⇒ 따라서 ArrayList <strong>사용법</strong>을 익히자!</p>
+
+<p><a href="https://www.youtube.com/playlist?list=PLuHgQVnccGMDsWOOn_P0EmAWB8DArS3Fk">여기</a>서 강의 확인 가능합니다.</p>
+
+<h2 id="1-arraylist-생성하기">1. ArrayList 생성하기</h2>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+</code></pre></div></div>
+
+<p>1) new 연산자를 사용하여 ArrayList 객체를 만들고</p>
+
+<p>2) 1로 만든 것을 ArrayList타입의 변수인 numbers에 할당한다.</p>
+
+<p>*<Integer> 제네릭을 쓰는 이유? ⇒ 사용하려는 ArrayList가 내부적으로 엘리먼트들이 숫자라는 것을 미리 지정함.</Integer></p>
+
+<h2 id="2-데이터-추가하기">2. 데이터 추가하기</h2>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">numbers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">50</span><span class="o">);</span>
+</code></pre></div></div>
+
+<ul>
+  <li>“1번 인덱스에 50이라는 값을 끼워넣고 싶다”</li>
+</ul>
+
+<h2 id="3-데이터-삭제하기">3. 데이터 삭제하기</h2>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">numbers</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>
+</code></pre></div></div>
+
+<h2 id="4-인덱스를-통해-데이터-가져오기">4. 인덱스를 통해 데이터 가져오기</h2>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">numbers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>
+</code></pre></div></div>
+
+<h2 id="5-데이터의-사이즈-가져오기">5. 데이터의 사이즈 가져오기</h2>
+
+<p>몇 개의 엘리먼트가 저장되어 있는지 알고 싶을 때 사용.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">numbers</span><span class="o">.</span><span class="na">size</span><span class="o">();</span>
+</code></pre></div></div>
+
+<h1 id="iteration-반복-사용하기">Iteration 반복 사용하기</h1>
+
+<p>Iterator it = numbers.iterator();</p>
+
+<p>ArrayList에 저장되어 있는 데이터를 순차적인 반복 작업을 통해 요소들 하나하나를 꺼내 와서 어떤 처리를 하는 것!</p>
+
+<ul>
+  <li>numbers : ArrayList 객체</li>
+  <li>iterator() : numbers 객체가 가지고 있는 iterator() 메서드를 호출. 리턴값이 Iterator 타입이다.</li>
+  <li>Iterator : 인터페이스</li>
+  <li>it : 리턴값들이 담기는 변수</li>
+</ul>
+
+<h2 id="1-while">1) while</h2>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Iterator</span> <span class="n">it</span> <span class="o">=</span> <span class="n">numbers</span><span class="o">.</span><span class="na">iterator</span><span class="o">();</span>
+	<span class="k">while</span><span class="o">(</span><span class="n">it</span><span class="o">.</span><span class="na">hasNext</span><span class="o">()){</span>
+		<span class="kt">int</span> <span class="n">value</span> <span class="o">=</span> <span class="o">(</span><span class="kt">int</span><span class="o">)</span><span class="n">it</span><span class="o">.</span><span class="na">next</span><span class="o">();</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h2 id="2-for-each">2) for each</h2>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">value</span> <span class="o">:</span> <span class="n">numbers</span><span class="o">){</span>
+	<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">value</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h2 id="3-for">3) for</h2>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">numbers</span><span class="o">.</span><span class="na">size</span><span class="o">();</span> <span class="n">i</span><span class="o">++){</span>
+	<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">numbers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">i</span><span class="o">));</span>
+<span class="o">}</span>
+</code></pre></div></div>
+:ET
