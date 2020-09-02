@@ -11,6 +11,7 @@ _site/
 .sass-cache/
 .jekyll-metadata
 .jekyll
+.jekyll-cache
 Gemfile
 Gemfile.lock
 https://gmlwjd9405.github.io/2017/10/06/Jekyll-github.io-blog-3.html
