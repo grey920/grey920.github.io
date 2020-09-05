@@ -461,3 +461,219 @@ public class Main {
     		return -1; // 찾는 값이 없다는 뜻!
     	}
     ```
+
+<br><br>
+
+# 7. 반복
+
+- 리스트도 배열처럼 데이터의 집합이기 때문에 반복적으로 처리하는 작업이 꼭 필요하다.
+
+### 1) 반복문
+
+```java
+for(int i=0; i < numbers.size(); i++) {
+			System.out.println(numbers.get(i));
+		}
+```
+
+- 콘솔 출력 : 
+10
+20
+30
+40
+
+### 2) Iterator (권장됨)
+
+- 반복적인 작업을 위해 고안된 객체를 사용하는 방법
+
+**Main.java**
+
+```java
+// 반복작업을 위해서 ListIterator라는 객체가 필요하다. ListIterator객체를 리턴받기 위해서 listIterator()메소드를 사용
+		ArrayList.ListIterator li = numbers.listIterator(); // 리턴되는 객체를 li에 담는다.
+		System.out.println(li.next()); //10
+		System.out.println(li.next()); //20
+		System.out.println(li.next()); //30
+		System.out.println(li.next()); //40
+```
+
+**ArrayList.java**
+
+```java
+// 1)
+	public ListIterator listIterator() { //ListIterator는 리턴할 데이터 타입
+		return new ListIterator();
+	}
+
+	
+	// 2) ArrayList클래스 안에 ListIterator 클래스 생성
+	class ListIterator{
+		private int nextIndex = 0;
+		public Object next() {
+			Object returnData = elementData[nextIndex]; // 리턴값은 ListIterator의 부모 클래스인 ArrayList의 elementData배열에 담겨있다.
+								// elementData[nextIndex] : 리턴할 특정 인덱스는 next()메소드가 호출될때마다
+								// 인덱스의 값이 0을 시작으로 1씩 증가한다면 elementData에 담겨있는 값들을 
+								// 순차적으로 하나씩 꺼내서 리턴할 수 있다
+			nextIndex++;
+			return returnData;
+		} 
+		 
+	}
+```
+
+리턴값을 elementData[nextIndex++]로 바꿈으로써 next()메소드를 한 줄로 더 간단히 고칠 수 있다. 
+
+```java
+class ListIterator{
+		private int nextIndex = 0;
+		public Object next() {
+			return elementData[nextIndex++];
+		} 
+	}
+```
+
+메인에서 next()메소드를 더 사용하면 **null**이 출력된다. 
+
+→ 더 이상 가져올 값이 없기 때문에!
+
+```java
+ArrayList.ListIterator li = numbers.listIterator(); // 리턴되는 객체를 li에 담는다.
+		System.out.println(li.next()); //10
+		System.out.println(li.next()); //20
+		System.out.println(li.next()); //30
+		System.out.println(li.next()); //40
+		System.out.println(li.next());
+		System.out.println(li.next());
+```
+
+- 콘솔 출력 : 
+10
+20
+30
+40
+null
+null
+
+- 메인의 반복적인 next()를 반복문으로 바꿔 자동화 시키기
+
+```java
+while(true) { 
+			System.out.println(li.next());
+		}
+```
+
+이렇게 하면 배열의 모든 값이 출력됨과 동시에 **에러**까지 출력된다.
+
+- 배열의 최대값인 100을 넘어간 값까지 출력을 요구하기 때문에 ArrayIndexOutOfBoundsException이 출력
+
+따라서 while의 조건에 hasNext()를 만들어서 반복의 종료 조건을 설정한다.
+
+```java
+while(li.hasNext()) { //hasNext()가 true일때만 실행
+			System.out.println(li.next());
+		}
+```
+
+### 3) hasNext()
+
+**ArrayList.java**
+
+```java
+class ListIterator{
+		private int nextIndex = 0;
+		
+		public boolean hasNext() { 
+						// size()와 nextIndex의 값을 비교해서 
+						// nextIndex가 더 작으면 next()호출해서 어떤 엘리먼트를 가져올 수 있는 상태라는걸 true로 리턴
+			return nextIndex < size();
+		}
+		
+		public Object next() {
+			return elementData[nextIndex++];
+		} 
+	}
+```
+
+- 배열의 크기(size())와 nextIndex를 비교해서 다음 출력값이 없을때까지 계속 반복하도록 만든다.
+
+### 4) previous와 hasPrevious
+
+- 이전 엘리먼트를 찾는 기능
+
+**ArrayList.java**
+
+```java
+public Object previous() {
+			return elementData[--nextIndex];
+		}
+		
+		public boolean hasPrevious() {
+			return nextIndex > 0;
+		}
+```
+
+**Main.java**
+
+```java
+ArrayList.ListIterator li = numbers.listIterator(); 
+		while(li.hasNext()) {
+			System.out.println(li.next());
+		}
+		
+		while(li.hasPrevious()) {
+			System.out.println(li.previous());
+		}
+```
+
+- 콘솔 출력 : 
+10
+20
+30
+40
+40
+30
+20
+10
+
+### 5) Iterator add, remove
+
+**Iterator add**
+
+**Main.java**
+
+```java
+ArrayList.ListIterator li = numbers.listIterator(); 
+		while(li.hasNext()) {
+			int number = (int)li.next();
+			if(number == 30) {
+				li.add(35);
+			}
+		}
+		System.out.println(numbers);
+```
+
+- 값이 30일때 35를 리스트에 추가하는 코드.
+
+**ArrayList.java**
+
+ListIterator 클래스 안
+
+```java
+public void add(Object element) {
+			ArrayList.this.add(nextIndex++, element);
+			// 그냥 add라고 쓰면 현재의 add메소드가 나오기 때문에
+			// this를 써서 numbers에 포함된 add메소드임을 나타낸다
+		}
+```
+
+- 콘솔 출력 : 
+[10,20,30,35,40]
+
+**Iterator remove**
+
+```java
+public void remove() { // nextIndex가 가리키는 인덱스의 이전 인덱스를 지운다.
+			ArrayList.this.remove(nextIndex-1);
+			nextIndex--;
+		}
+```
