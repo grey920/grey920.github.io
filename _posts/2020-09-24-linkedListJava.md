@@ -21,6 +21,8 @@ toc_label: LinkedList 자바로 구현하기
 - Link field - 다음 리스트에 대한 레퍼런스값을 가진 변수
 - node / vertex / element - 객체
 
+<br><br>
+
 # 1. 객체 생성
 
 ## LinkedList 클래스와 Main 클래스 생성
@@ -65,6 +67,8 @@ public class LinkedList {
 	}
 }
 ```
+
+<br><br>
 
 # 2. 데이터 추가 - addFirst
 
@@ -133,6 +137,8 @@ public class LinkedList {
 }
 ```
 
+<br><br>
+
 # 3. 데이터 추가 - addLast
 
 main.java
@@ -170,6 +176,8 @@ public void addFirst(Object input) {
 		}
 	}
 ```
+
+<br><br>
 
 # 4. Node
 
@@ -226,6 +234,8 @@ public Node node(int index) {//Node 인스턴스를 리턴
 
 ⇒ public 없애기
 
+<br><br>
+
 # 5. 특정한 위치에 원하는 값 끼워넣기 - add
 
 1번 인덱스 위치에 15값을 넣는 add(1, 15)메소드 생성
@@ -239,5 +249,26 @@ public static void main(String[] args) {
 		numbers.addLast(20);
 		numbers.addLast(30);
 		numbers.add(1, 15); // index 1의 위치(10과 20 사이)에 15를 넣겠다.
+	}
+```
+
+LinkedList.java
+
+```java
+public void add(int k, Object input) { // k : 추가하려는 노드의 리스트 상에서의 인덱스값
+		if(k == 0) {
+			addFirst(input); //첫번째 위치로 들어온다
+		} else { 
+			Node temp1 = node(k-1);
+			Node temp2 = temp1.next;
+			Node newNode = new Node(input); // 새로운 노드 생성
+			temp1.next = newNode;
+			newNode.next = temp2;
+			size++;
+			if(newNode.next == null) {
+				tail = newNode;
+			}
+		}
+		
 	}
 ```
