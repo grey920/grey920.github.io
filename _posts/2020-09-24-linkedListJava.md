@@ -238,7 +238,7 @@ public Node node(int index) {//Node 인스턴스를 리턴
 
 # 5. 특정한 위치에 원하는 값 끼워넣기 - add
 
-1번 인덱스 위치에 15값을 넣는 add(1, 15)메소드 생성
+1번 인덱스 위치에 15값을 넣는 add(1, 15)메소드 생성 ⇒ 20이 뒤로 밀리고, 10과 20 사이에 15가 들어간다
 
 main.java
 
@@ -248,7 +248,7 @@ public static void main(String[] args) {
 		numbers.addLast(10);
 		numbers.addLast(20);
 		numbers.addLast(30);
-		numbers.add(1, 15); // index 1의 위치(10과 20 사이)에 15를 넣겠다.
+		numbers.add(2, 25); // index 2의 위치(20과 30 사이)에 25를 넣겠다.
 	}
 ```
 
@@ -272,3 +272,182 @@ public void add(int k, Object input) { // k : 추가하려는 노드의 리스�
 		
 	}
 ```
+
+<br><br>
+
+# 6. 확인하기 - toString
+
+```java
+System.out.println(numbers);
+```
+
+⇒ 결과값 : list.linkedlist.implementation.LinkedList@28a418fc
+
+### 잘 알아볼 수 있도록 toString을 이용하기
+
+LinkedList.java
+
+```java
+public String toString() {
+		// 만약 데이터가 없다면 [] 출력
+		if(head == null) {
+			return "[]";
+		}
+		// 리스트로 순차적인 작업인 처리를 한다면 
+		// 제일먼저 "head가 누군지"부터 찾아야 한다!
+		Node temp = head;
+		String str = "[";
+		
+		while(temp.next != null) {
+			str += temp.data + ", ";
+			temp = temp.next;
+		}
+		str += temp.data; // 마지막은 next가 없기 때문에 값을 수동으로 추가한다
+		
+		return str +"]";
+	}
+```
+
+1. 리스트 안에 데이터가 없다면 [] 괄호만 출력되도록 한다
+2. 데이터가 있다면 head부터 순차적으로 출력한다
+
+```java
+public static void main(String[] args) {
+		LinkedList numbers = new LinkedList(); //링크드 리스트 인스턴스화
+		numbers.addLast(10);
+		numbers.addLast(20);
+		numbers.addLast(30);
+		numbers.add(1, 15);
+		System.out.println(numbers);
+	}
+```
+
+결과값 ⇒ [10, 15, 20, 30]
+
+<br><br>
+
+# 7. removeFirst
+
+리스트의 첫번째 값을 삭제하는 numbers.removeFirst()를 구현한다
+
+linkedList.java
+
+```java
+public Object removeFirst() {
+		// 노드를 탐색해야하기 때문에 head값을 일단 찾아 temp에 넣는다
+		Node temp = head;
+		// head는 삭제될 거니까 다음 노드로 head를 옮긴다
+		head = head.next;
+		// 자바의 컬렉션에서 삭제하는 값을 리턴하듯, 
+		// 우리도 삭제될 데이터 값을 returnData에 담아 리턴한다. 
+		Object returnData = temp.data;
+		temp = null;
+		size--;
+		return returnData;
+	}
+```
+
+main.java
+
+```java
+public static void main(String[] args) {
+		LinkedList numbers = new LinkedList(); //링크드 리스트 인스턴스화
+		numbers.addLast(10);
+		numbers.addLast(20);
+		numbers.addLast(30);
+		System.out.println(numbers.removeFirst()); // 잘 됐는지 확인
+		System.out.println(numbers);
+	}
+```
+
+결과값 ⇒ 
+
+10
+[20, 30]
+
+- 삭제한 데이터값인 10과 삭제된 후의 리스트값인 [20,30]이 출력되었다.
+
+<br><br>
+
+# 8. remove, removeLast
+
+### remove
+
+특정한 위치에 있는 엘리먼트를 삭제한다.
+
+- 삭제하려는 노드의 이전 노드를 알아야 한다. 삭제될 노드의 **이전 노드**가 next로 삭제하려는 노드의 다음 노드를 가리켜야 하기 때문에.
+- 삭제하려는 노드 k -1을 알아내서 그걸 temp의 값으로 지정한다
+
+linkedList.java
+
+```java
+public Object remove(int k) {// k는 인덱스 값
+		if(k == 0) {
+			return removeFirst();
+		}
+		Node temp = node(k-1);
+		Node todoDeleted = temp.next; // 삭제하려는 노드
+		temp.next = temp.next.next;
+		Object returnData = todoDeleted.data;
+		if(todoDeleted == tail) {// 삭제하려는 노드가 마지막 노드라면,
+			tail = temp; // 삭제하려는 노드의 이전 노드이다
+		}
+		todoDeleted = null;
+		size--;
+		return returnData;
+	}
+```
+
+main.java
+
+```java
+public static void main(String[] args) {
+		LinkedList numbers = new LinkedList(); //링크드 리스트 인스턴스화
+		numbers.addLast(5);		
+		numbers.addLast(10);
+		numbers.addLast(15);		
+		numbers.addLast(20);
+		numbers.addLast(30);
+		System.out.println(numbers.remove(2)); // 잘 됐는지 확인
+		System.out.println(numbers);
+	}
+```
+
+결과값 ⇒
+
+15
+[5, 10, 20, 30]
+
+### removeLast
+
+```java
+public Object removeLast() {
+		return remove(size-1);
+	}
+```
+
+- 위에서 만든 remove()를 이용해서 size-1을 넣어준다
+- remove를 쓰면 앞에서부터 하나씩 찾아서 마지막까지 가야하는데, 어차피 tail에 마지막 노드의 정보가 들어있으니 그것만 삭제하면 안되나? → 안됨. 부족함
+    - 그 이전 노드의 next값을 지워주어야지만 삭제된 효과가 있다. 즉, temp(이전 노드)를 알아야 한다!!
+    - 그래서 가장 마지막 노드를 지운다는건 최악의 경우이다. (만약 데이터가 천만개라면 속도가 엄청나게 늦어질것임)
+    - 반면, ArrayList는 내부적으로 index를 가지고 있다 ⇒ 배열의 마지막 인덱스값만 가지고 있으면 괭장히 빠르게 삭제를 처리할 수 있다.
+
+main.java
+
+```java
+public static void main(String[] args) {
+		LinkedList numbers = new LinkedList(); //링크드 리스트 인스턴스화
+		numbers.addLast(5);		
+		numbers.addLast(10);
+		numbers.addLast(15);		
+		numbers.addLast(20);
+		numbers.addLast(30);
+		System.out.println(numbers.removeLast()); // 잘 됐는지 확인
+		System.out.println(numbers);
+	}
+```
+
+결과값⇒
+
+30
+[5, 10, 15, 20]
