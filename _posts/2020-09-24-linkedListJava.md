@@ -451,3 +451,69 @@ public static void main(String[] args) {
 
 30
 [5, 10, 15, 20]
+
+<br><br>
+## 9. size, get
+
+- size() : 가지고 있는 엘리먼트의 갯수 구하기
+
+    ```java
+    public int size() {
+    		return size;
+    	}
+    ```
+
+    삭제하거나 추가할 때 마다 사이즈 값을 갱신해왔기 때문에 size값을 그냥 호출하면 된다.
+
+- get(index) : 특정한 위치에 있는 엘리먼트를 가져올 때 사용
+- Main.java
+
+    System.out.println(numbers.get(1)); 
+
+- LinkedList.java
+
+    ```java
+    public Object get(int k) {
+    		Node temp = node(k); // 인덱스 값을 그대로 준다
+    		return temp.data;
+    	}
+    ```
+
+<br><br>
+
+## 10. indexOf
+
+특정한 데이터가 어떤 위치에 존재하는가를 검색.
+
+Main.java
+
+```java
+public static void main(String[] args) {
+		LinkedList numbers = new LinkedList(); //링크드 리스트 인스턴스화
+		numbers.addLast(10);
+		numbers.addLast(20);
+		numbers.addLast(30);
+		System.out.println(numbers.indexOf(30)); // 2를 리턴
+	}
+```
+
+LinkedList.java
+
+```java
+public int indexOf(Object data) {
+		Node temp = head;
+		// 찾고자 하는 노드가 나올때까지 하나하나 검색
+		int index = 0; // 찾고자하는 노드의 위치정보
+		while(temp.data != data) { // temp에 저장된 데이터값과 검색하고자 하는 데이터값이 같지 않으면 계속 검색
+			temp = temp.next; //다음 노드를 찾을 수 있도록
+			index++;
+			if(temp == null) {// 끝 노드에 도달했다면
+				return -1;// 검색 종료
+			}
+		}
+		return index;
+	}
+```
+
+결과값 ⇒ 2
+
