@@ -86,7 +86,7 @@ name이라는 변수가 가리키는 메모리 어딘가에 ellie라는 값을 �
 console.log(name); // 블럭 밖 -> 아무 값도 출력되지 않는다
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f26a316b-04b6-458a-8763-e3d6e29cea31/_2020-10-11__7.56.13.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f26a316b-04b6-458a-8763-e3d6e29cea31/_2020-10-11__7.56.13.png)
+<!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f26a316b-04b6-458a-8763-e3d6e29cea31/_2020-10-11__7.56.13.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f26a316b-04b6-458a-8763-e3d6e29cea31/_2020-10-11__7.56.13.png) -->
 
 -   global scope : 블럭을 쓰지 않고 파일 안에 바로 정의해서 쓰는 변수 (전역변수)
 -   어디서나 접근이 가능하다.
@@ -106,7 +106,7 @@ console.log(name); // 블럭 안 변수 - 콘솔에 출력 x
 console.log(globalName); // 글로벌 변수 - 콘솔에 출력 o
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a8d01397-2ee4-4d4c-9df4-03dd11f83aaf/_2020-10-11__8.11.50.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a8d01397-2ee4-4d4c-9df4-03dd11f83aaf/_2020-10-11__8.11.50.png)
+<!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a8d01397-2ee4-4d4c-9df4-03dd11f83aaf/_2020-10-11__8.11.50.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a8d01397-2ee4-4d4c-9df4-03dd11f83aaf/_2020-10-11__8.11.50.png) -->
 
 ### let
 
@@ -128,7 +128,7 @@ console.log(globalName); // 글로벌 변수 - 콘솔에 출력 o
 
         콘솔
 
-        ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/35adeb33-7476-4d23-bff7-d33f486ddb99/_2020-10-11__8.21.06.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/35adeb33-7476-4d23-bff7-d33f486ddb99/_2020-10-11__8.21.06.png)
+        <!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/35adeb33-7476-4d23-bff7-d33f486ddb99/_2020-10-11__8.21.06.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/35adeb33-7476-4d23-bff7-d33f486ddb99/_2020-10-11__8.21.06.png) -->
 
         ```jsx
         // let을 쓴다면??
@@ -136,7 +136,7 @@ console.log(globalName); // 글로벌 변수 - 콘솔에 출력 o
         let name;
         ```
 
-        ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/55eb43e4-f4a4-448b-a520-e98db3df6c43/_2020-10-11__8.23.08.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/55eb43e4-f4a4-448b-a520-e98db3df6c43/_2020-10-11__8.23.08.png)
+        <!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/55eb43e4-f4a4-448b-a520-e98db3df6c43/_2020-10-11__8.23.08.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/55eb43e4-f4a4-448b-a520-e98db3df6c43/_2020-10-11__8.23.08.png) -->
 
         -   변수를 선언하기도 전에 접근했다는 에러메시지가 출력됨 ⇒ 정상
 
@@ -153,7 +153,7 @@ console.log(globalName); // 글로벌 변수 - 콘솔에 출력 o
         console.log(age);
         ```
 
-        ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fb5b039d-5a36-4bd1-82a5-500583c14c4c/_2020-10-11__8.32.09.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fb5b039d-5a36-4bd1-82a5-500583c14c4c/_2020-10-11__8.32.09.png)
+        <!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fb5b039d-5a36-4bd1-82a5-500583c14c4c/_2020-10-11__8.32.09.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fb5b039d-5a36-4bd1-82a5-500583c14c4c/_2020-10-11__8.32.09.png) -->
 
         -   블럭 안에서 변수를 선언 했음에도 밖에서 출력할 때 정상적으로 출력된다
         -   아무리 깊은 곳에 변수를 선언 해도 아무 곳에서 호출할 때 출력이 된다. → 규모가 있는 프로젝트를 하다보면, 선언하지 않은 값이 할당되는 이상한 일들이 일어난다.
@@ -204,7 +204,7 @@ console.log(`value: ${count}, type: ${typeof count}`);
 console.log(`value: ${size}, type: ${typeof size}`);
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/37e8bf0a-2f80-48b8-b805-31884980560b/_2020-10-11__8.58.26.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/37e8bf0a-2f80-48b8-b805-31884980560b/_2020-10-11__8.58.26.png)
+<!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/37e8bf0a-2f80-48b8-b805-31884980560b/_2020-10-11__8.58.26.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/37e8bf0a-2f80-48b8-b805-31884980560b/_2020-10-11__8.58.26.png) -->
 
 -   정수와 소수 상관없이 type은 number이다.
 
@@ -220,7 +220,7 @@ console.log(negativeInfinity);
 console.log(nAn);
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ca8b5368-0f11-42cd-851d-9c20eea05ea7/_2020-10-11__9.02.52.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ca8b5368-0f11-42cd-851d-9c20eea05ea7/_2020-10-11__9.02.52.png)
+<!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ca8b5368-0f11-42cd-851d-9c20eea05ea7/_2020-10-11__9.02.52.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ca8b5368-0f11-42cd-851d-9c20eea05ea7/_2020-10-11__9.02.52.png) -->
 
 -   infinity : 양수를 0으로 나눌 때
 -   -infinity : 음수를 0 으로 나눌 때
@@ -242,7 +242,7 @@ const helloBob = `hi ${brendan}!`; // template literals
 console.log(`value: ${helloBob}, type: ${typeof helloBob}`);
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/91fb6142-eefe-4c3e-8fc1-8648ab6a7d2f/_2020-10-11__9.11.40.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/91fb6142-eefe-4c3e-8fc1-8648ab6a7d2f/_2020-10-11__9.11.40.png)
+<!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/91fb6142-eefe-4c3e-8fc1-8648ab6a7d2f/_2020-10-11__9.11.40.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/91fb6142-eefe-4c3e-8fc1-8648ab6a7d2f/_2020-10-11__9.11.40.png) -->
 
 -   template literals (string) : 백틱기호(``)를 이용해서 원하는 string을 적고 달러 싸인과 기호를 이용하면 ( \${} ) 변수에 값이 자동으로 붙여져서 나온다.
 
@@ -262,7 +262,7 @@ console.log(`value: ${canRead}, type: ${typeof canRead}`);
 console.log(`value: ${test}, type: ${typeof test}`);
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c928f941-ef35-48a9-8414-30e1472e59c2/_2020-10-11__9.18.33.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c928f941-ef35-48a9-8414-30e1472e59c2/_2020-10-11__9.18.33.png)
+<!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c928f941-ef35-48a9-8414-30e1472e59c2/_2020-10-11__9.18.33.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c928f941-ef35-48a9-8414-30e1472e59c2/_2020-10-11__9.18.33.png) -->
 
 ### null과 undefined
 
@@ -279,7 +279,7 @@ let x;
 console.log(`value: ${x}, type: ${typeof x}`);
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5b801ebd-b100-4640-b5a5-fcf80ce7c18e/_2020-10-11__9.21.16.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5b801ebd-b100-4640-b5a5-fcf80ce7c18e/_2020-10-11__9.21.16.png)
+<!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5b801ebd-b100-4640-b5a5-fcf80ce7c18e/_2020-10-11__9.21.16.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5b801ebd-b100-4640-b5a5-fcf80ce7c18e/_2020-10-11__9.21.16.png) -->
 
 ### symbol
 
@@ -292,7 +292,7 @@ const symbol2 = Symbol("id");
 console.log(symbol1 === symbol2); // 동일한지 확인
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/83f3428f-8e91-4e73-addb-ddcfe132d942/_2020-10-11__9.28.29.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/83f3428f-8e91-4e73-addb-ddcfe132d942/_2020-10-11__9.28.29.png)
+<!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/83f3428f-8e91-4e73-addb-ddcfe132d942/_2020-10-11__9.28.29.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/83f3428f-8e91-4e73-addb-ddcfe132d942/_2020-10-11__9.28.29.png) -->
 
 -   false가 출력됨.
 -   동일한 string 값(id)이 들어가도 다르게 인식됨.
@@ -311,7 +311,7 @@ console.log(symbol1 === symbol2); // 동일한지 확인
         console.log(gSymbol1 === gSymbol2); // true
         ```
 
-        ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/42c91e57-40dc-4985-9ec4-d5a0246adfb7/_2020-10-11__9.32.22.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/42c91e57-40dc-4985-9ec4-d5a0246adfb7/_2020-10-11__9.32.22.png)
+        <!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/42c91e57-40dc-4985-9ec4-d5a0246adfb7/_2020-10-11__9.32.22.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/42c91e57-40dc-4985-9ec4-d5a0246adfb7/_2020-10-11__9.32.22.png) -->
 
 -   symbol은 바로 출력하면 에러가 나온다
 
@@ -333,8 +333,8 @@ ellie.age = 21;
 ```
 
 -   ellie는 const로 지정되어 있기 때문에 메모리의 포인터가 잠겨있어서 다른 오브젝트로 할당이 불가하지만, ellie 오브젝트 안에 있는 name, age 변수들은 ellie.name, ellie.age로 다른 값을 할당해줄 수 있다.
-
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/07ea545f-93a0-4b32-a161-2b97f2ae665a/_2020-10-11__9.55.44.png">
+<!--
+    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/07ea545f-93a0-4b32-a161-2b97f2ae665a/_2020-10-11__9.55.44.png"> -->
 
 ### Dynamic typing
 
@@ -356,7 +356,7 @@ ellie.age = 21;
     console.log(`value: ${text}, type: ${typeof text}`); // number
     ```
 
-    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/92e39d5a-acda-4a91-9a2b-4717bca22dbe/_2020-10-11__9.45.21.png">
+    <!-- <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/92e39d5a-acda-4a91-9a2b-4717bca22dbe/_2020-10-11__9.45.21.png"> -->
 
     -   런타임시 타입이 지정되기 때문에 런타임 에러가 생길 수 있다
 
