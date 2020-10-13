@@ -344,31 +344,33 @@ ellie.age = 21;
 -   규모가 있는 프로젝트에서는 단점일 수 있다.
 -   예시
 
-    ```jsx
-    // 5. Dynamic typing : dynamically typed language
-    let text = "hello";
-    console.log(`value: ${text}, type: ${typeof text}`); // string
-    text = 1;
-    console.log(`value: ${text}, type: ${typeof text}`); // number
-    text = "7" + 5;
-    console.log(`value: ${text}, type: ${typeof text}`); // string (string + string)
-    text = "8" / "2";
-    console.log(`value: ${text}, type: ${typeof text}`); // number
-    ```
+        ```jsx
+        // 5. Dynamic typing : dynamically typed language
+        let text = "hello";
+        console.log(`value: ${text}, type: ${typeof text}`); // string
+        text = 1;
+        console.log(`value: ${text}, type: ${typeof text}`); // number
+        text = "7" + 5;
+        console.log(`value: ${text}, type: ${typeof text}`); // string (string + string)
+        text = "8" / "2";
+        console.log(`value: ${text}, type: ${typeof text}`); // number
+        ```
 
-    <!-- <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/92e39d5a-acda-4a91-9a2b-4717bca22dbe/_2020-10-11__9.45.21.png"> -->
+        <!-- <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/92e39d5a-acda-4a91-9a2b-4717bca22dbe/_2020-10-11__9.45.21.png"> -->
 
-    -   런타임시 타입이 지정되기 때문에 런타임 에러가 생길 수 있다
+        -   런타임시 타입이 지정되기 때문에 런타임 에러가 생길 수 있다
 
-    ```jsx
-    let text = "hello";
-    console.log(text.charAt(0)); //h
-    console.log(`value: ${text}, type: ${typeof text}`);
-    text = 1;
-    console.log(`value: ${text}, type: ${typeof text}`);
-    text = "7" + 5;
-    console.log(`value: ${text}, type: ${typeof text}`);
-    text = "8" / "2";
-    console.log(`value: ${text}, type: ${typeof text}`);
-    console.log(text.charAt(0)); //Uncaught TypeError: text.charAt is not a function
-    ```
+        ```jsx
+        let text = "hello";
+        console.log(text.charAt(0)); //h
+        console.log(`value: ${text}, type: ${typeof text}`);
+        text = 1;
+        console.log(`value: ${text}, type: ${typeof text}`);
+        text = "7" + 5;
+        console.log(`value: ${text}, type: ${typeof text}`);
+        text = "8" / "2";
+        console.log(`value: ${text}, type: ${typeof text}`);
+        console.log(text.charAt(0)); //Uncaught TypeError: text.charAt is not a function
+        ```
+
+    <!-->
