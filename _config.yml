@@ -20,13 +20,13 @@ title                    : "Grey's Devlog"
 title_separator          : "&#124;"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "정겨운"
-description              : "우직하게 기록하는 연습을 위한 블로그"
+description              : "삽질로 동산 만들기"
 url                      : "https://grey920.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "grey920/grey920.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/bg-header.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"  "/assets/images/logo.png"
-masthead_title           : "성장하는 개발자 Grey's Devlog" # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "let dev = new Dev('grey')" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
 comments:
@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "정겨운"
   avatar           : "/assets/images/photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "<b>Done is better than perfect</b> <br> 블로그 포스트 글에서 잘못된 부분이나 수정이 필요한 부분은 적극적으로 댓글 남겨주신다면 감사하겠습니다."
+  bio              : "<b>Done is better than perfect</b> <br> 블로그 포스트 글에서 잘못된 부분이나 수정이 필요한 부분은 둥글둥글 댓글 남겨주신다면 감사하겠습니다."
   location         : "Republic of Korea, Seoul"
   email            : "gyuwoonj@gmail.com"
   links:
