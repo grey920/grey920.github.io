@@ -1,11 +1,10 @@
 ---
-title: 2021-04-26 일기
+title: "2021-04-26 일기"
 header:
-    image: assets/images/bg-header2.jpg
-    caption: 'Photo credit: [**Unsplash**](https://unsplash.com)'
 categories:
     - Diary
 tags:
+    - Diary 
 ---
 
 ## 그동안의 근황

@@ -35,9 +35,7 @@ toc_label: 목차
 
 ## 2. 압축해제
 ![Image Alt 텍스트](/assets/images/2021-07-04/Untitled.png)
-<!-- <img src="./images/2021-07-04/Untitled.png"> -->
-![pizza]({{site.url}}/assets/images/meme/pizza.gif) 
-![Image Alt 텍스트]({{site.url}}/assets/images/2021-07-04/Untitled.png )
+<!-- ![Image Alt 텍스트]({{site.url}}/assets/images/2021-07-04/Untitled.png ) 이것도 가능-->
 <br>
 <br>
 <br>
