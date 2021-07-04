@@ -1,6 +1,8 @@
 ---
 title: "[JAVA] 맥에서 전자정부프레임워크 설치하고 실행하기"
 excerpt: 맥에서 전자정부프레임워크 설치하고 실행하기
+header: 
+    teaser : /assets/images/2021-07-04/Untitled15.png
 categories:
 - JAVA
 tags:
@@ -11,6 +13,8 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: 목차
+---
+
 ---
 참고 블로그)
 [mac 전자정부 프레임워크 설치 및 게시판 만들기](https://trytoso.tistory.com/1308)
@@ -32,6 +36,8 @@ toc_label: 목차
 ## 2. 압축해제
 ![Image Alt 텍스트](/assets/images/2021-07-04/Untitled.png)
 <!-- <img src="./images/2021-07-04/Untitled.png"> -->
+![pizza]({{site.url}}/assets/images/meme/pizza.gif) 
+![Image Alt 텍스트]({{site.url}}/assets/images/2021-07-04/Untitled.png )
 <br>
 <br>
 <br>
