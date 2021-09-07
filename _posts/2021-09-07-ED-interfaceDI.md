@@ -43,7 +43,7 @@ public class MobileControllerInterceptor extends HandlerInterceptorAdapter {
 
   ```
   java.lang.NullPointerException
-  	at com.kcc.smartwork.cmmn.interceptor.MobileControllerInterceptor.preHandle(MobileControllerInterceptor.java:98)
+  	at XXXXXXXXXx.interceptor.MobileControllerInterceptor.preHandle(MobileControllerInterceptor.java:98)
   	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:151)
   	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035)
   	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
@@ -79,15 +79,11 @@ public class MobileControllerInterceptor extends HandlerInterceptorAdapter {
   	at java.lang.Thread.run(Thread.java:748)
   ```
 
-</br>
-
 ## 원인
 
 **mainDAO**가 제대로 빈등록이 되어있지 않았다.
 
 원인은 WebMvcConfigurer를 구현한 **WebMvcConfig**에 있었다.
-
-</br>
 
 기존 코드
 
@@ -118,8 +114,6 @@ public class WebMvcConfig implements WebMvcConfigurer {
 > 위와 같이 `new()`를 통해 Interceptor 객체를 만들어서 등록하면 Spring Container에서 이 Interceptor를 관리하지 못한다고 한다.
 
 Interceptor에서 new로 등록하면 스프링이 이를 관리하지 못하게 되고, 따라서 의존성을 주입하려고 해도 스프링이 관리하지 않기 때문에 null이 되는 것이었다.
-
-</br>
 
 ## 해결
 
