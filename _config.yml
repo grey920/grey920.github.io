@@ -26,7 +26,7 @@ baseurl: # the subpath of your site, e.g. "/blog"
 repository: "grey920/grey920.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: "/assets/images/bg-header.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"  "/assets/images/logo.png"
-masthead_title: "let dev = new Dev('grey')" # overrides the website title displayed in the masthead, use " " for no title
+masthead_title: "Dev dev = new Dev('grey')" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs: true # true, false (default)
 words_per_minute: 200
 comments:
