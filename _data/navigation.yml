@@ -6,8 +6,9 @@ main:
     url: /tags/
   # - title: "About"
   #   url: /about/
-  - title: "연도별 포스트"
-    url: /posts/
+  #- title: "연도별 포스트"
+  #  url: /posts/
   - title: "Random"
-    #url: /client/vue2_install/
     url: /random/
+  - title: "Search"
+    url: /search/
