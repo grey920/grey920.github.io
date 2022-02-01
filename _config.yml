@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale: "ko-KR"
@@ -20,13 +20,13 @@ title: "Grey's Devlog"
 title_separator: "&#124;"
 subtitle: # site tagline that appears below site title in masthead
 name: "정겨운"
-description: "삽질로 동산 만들기"
+description: "프린데브 메이커"
 url: "https://grey920.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: "grey920/grey920.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: "/assets/images/bg-header.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"  "/assets/images/logo.png"
-masthead_title: Dev dev = new Dev("grey") # overrides the website title displayed in the masthead, use " " for no title
+logo: "/assets/images/profile/emoji1.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"  "/assets/images/logo.png"
+masthead_title: 프린데브 메이커 # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs: true # true, false (default)
 words_per_minute: 200
 comments:
@@ -92,21 +92,21 @@ analytics:
 
 # Site Author
 author:
-  name: "정겨운"
-  avatar: "/assets/images/photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "<b>Done is better than perfect</b> <br> 블로그 포스트 글에서 잘못된 부분이나 수정이 필요한 부분은 둥글둥글 댓글 남겨주신다면 감사하겠습니다."
-  location: "Republic of Korea, Seoul"
-  email: "gyuwoonj@gmail.com"
+  name: "Grey"
+  avatar: "/assets/images/profile/princess2.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio: "<p><b>리얼타임 주니어 개발자 육성 다이어리 (?!)</b></p> 칭찬을 받으면 성장이 빨라져요!<br>"
+  #location: "Republic of Korea, Seoul"
+  email: "charminggw@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+    #- label: "Email"
+    #  icon: "fas fa-fw fa-envelope-square"
+    # url: "mailto:your.name@email.com"
     - label: "Notion"
       icon: "fas fa-fw fa-link"
       url: "https://www.notion.so/Grey-d67b6784c5634090a1792db3f8f43c12"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      url: "https://twitter.com/Coding_Butler"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
