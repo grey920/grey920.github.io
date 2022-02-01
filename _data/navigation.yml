@@ -12,3 +12,50 @@ main:
     url: /random/
   - title: "Search"
     url: /search/
+
+docs:
+  - title: TIL
+    children:
+      - title: "오늘의 메모"
+        url: /memo/2022memo/
+      - title: "에러노트"
+        url: /categories/ErrorNote/
+  - title: Book Log
+    # children:
+    #   - title: "Configuration"
+    #     url: /docs/configuration/
+    #   - title: "Navigation"
+    #     url: /docs/navigation/
+    #   - title: "UI Text"
+    #     url: /docs/ui-text/
+    #   - title: "Authors"
+    #     url: /docs/authors/
+    #   - title: "Layouts"
+    #     url: /docs/layouts/
+
+  - title: Server
+    # children:
+    #   - title: "Working with Posts"
+    #     url: /docs/posts/
+    #   - title: "Working with Pages"
+    #     url: /docs/pages/
+    #   - title: "Working with Collections"
+    #     url: /docs/collections/
+    #   - title: "Helpers"
+    #     url: /docs/helpers/
+    #   - title: "Utility Classes"
+    #     url: /docs/utility-classes/
+
+  - title: Client
+    children:
+      # - title: "Vue3 & Nuxt"
+      # url: /docs/stylesheets/
+      # - title: "TypeScript"
+      # url: /docs/javascript/
+
+  - title: Etc
+    # children:
+    #   - title: "Stylesheets"
+    #     url: /docs/stylesheets/
+    #   - title: "JavaScript"
+    #     url: /docs/javascript/

@@ -103,10 +103,10 @@ author:
     # url: "mailto:your.name@email.com"
     - label: "Notion"
       icon: "fas fa-fw fa-link"
-      url: "https://www.notion.so/Grey-d67b6784c5634090a1792db3f8f43c12"
+      # url: "https://www.notion.so/Grey-d67b6784c5634090a1792db3f8f43c12"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/Coding_Butler"
+      # url: "https://twitter.com/Coding_Butler"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
@@ -212,6 +212,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-last-modified-at
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -265,6 +266,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+      sidebar:
+        nav: "docs"
       read_time: true
       comments: true
       share: true
@@ -279,6 +282,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+      sidebar:
+        nav: "docs"
       read_time: false
       comments: false
       share: true

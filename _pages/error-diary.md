@@ -1,9 +1,9 @@
 ---
-title: "에러 다이어리"
-permalink: /categories/에러 다이어리/
+title: "에러노트"
+permalink: /categories/ErrorNote/
 layout: category
 author_profile: true
-taxonomy: ErrorDiary
+taxonomy: ErrorNote
 ---
 
 매일매일 터지는 신나는 에러파티의 기록

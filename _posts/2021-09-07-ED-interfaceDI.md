@@ -2,7 +2,7 @@
 title: "[Spring] Interceptor 사용시 의존성 주입이 안되는 경우"
 excerpt: "분명 @Autowired를 붙였는데 빈이...null이라고...?"
 categories:
-  - ErrorDiary
+  - ErrorNote
 tags:
   - spring
   - DI
