@@ -214,9 +214,10 @@ figure {
 	-webkit-box-pack: justify;
 	justify-content: space-between;
 	-webkit-box-align: start;
-	align-items: flex-start;
+	align-items: center; //flex-start;
 	flex-wrap: wrap;
 	margin: 2em 0;
+	flex-direction: column; // 추가
 
 	img,
 	iframe,
@@ -225,7 +226,7 @@ figure {
 	}
 
 	img {
-		width: 100%;
+		//width: 100%;
 		border-radius: $border-radius;
 		-webkit-transition: $global-transition;
 		transition: $global-transition;
