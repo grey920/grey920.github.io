@@ -1,7 +1,7 @@
-# main links
+# main links - 블로그 제목있는 헤더
 main:
-  # - title: "Categories"
-  #   url: /categories/
+  - title: "Categories"
+    url: /categories/
   - title: "Tags"
     url: /tags/
   # - title: "About"
@@ -13,6 +13,7 @@ main:
   - title: "Search"
     url: /search/
 
+#좌측 사이드바 메뉴
 docs:
   - title: TIL
     children:
@@ -21,11 +22,12 @@ docs:
       - title: "에러노트"
         url: /categories/ErrorNote/
   - title: Book Log
-    # children:
-    #   - title: "Configuration"
-    #     url: /docs/configuration/
-    #   - title: "Navigation"
-    #     url: /docs/navigation/
+    url: /categories/booklog/
+    children:
+      - title: "실용주의 프로그래머"
+        url: /tags/#pragmatic
+      - title: "클린코드"
+        url: /tags/#cleancode
     #   - title: "UI Text"
     #     url: /docs/ui-text/
     #   - title: "Authors"
