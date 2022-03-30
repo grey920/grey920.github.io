@@ -1,6 +1,11 @@
 /* ==========================================================================
    Syntax highlighting
    ========================================================================== */
+code.highlighter-rouge{
+  background: $base00;
+  color: $base05;
+  font-weight: bolder;
+}
 
 div.highlighter-rouge,
 figure.highlight {
