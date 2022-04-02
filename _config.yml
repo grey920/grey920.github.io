@@ -12,7 +12,9 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+# add dark theme toggle (https://github.com/VladimirSiv/VladimirSiv.github.io/tree/3985fe26e6a9572098945b7b5409bb6e540529a4)
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin2   : "dark"
 
 # Site Settings
 locale: "ko-KR"
