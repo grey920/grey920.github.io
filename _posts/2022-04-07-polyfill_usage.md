@@ -66,6 +66,7 @@ toc_icon: "list"
 
 
 - cdn 사용하기
+    - URL을 구성해서 사용하려는 곳보다 먼저 로드되도록 넣어준다.
     <figure>
         <img src='{{ "/assets/images/2022-04-07/polyfillCdn.png" | relative_url }}' width="850" />
         <figcaption>Polyfill.io에서 원하는 기능을 체크하여 cdn을 구성한다</figcaption>
@@ -78,6 +79,7 @@ includes 외에도 내가 캐치하지 못한 다른 기능들이 있을 수 있
 
 <figure>
     <img src='{{ "/assets/images/2022-04-07/Untitled 2.png" | relative_url }}' width="850" />
+    <figcaption>polyfill 소스 내부에 있는 속성을 못읽는다고...?</figcaption>
 </figure>
 
 이런 에러가 발생했다.. ㅎ 
@@ -85,13 +87,14 @@ includes 외에도 내가 캐치하지 못한 다른 기능들이 있을 수 있
 
 
 ## 그리고 나온 또다른 문제...2
-저 includes()가 들어있는 write.js가 있고, 나는 이 write.js를 import하는 jsp쪽에 폴리필 cdn을 넣었는데 계속 적용이 되지 않았다...
+저 includes()가 들어있는 write.js가 있고, 나는 이 write.js를 import하는 write.jsp쪽에 폴리필 cdn을 넣었는데 계속 적용이 되지 않았다...
 
-이것 저것을 시도해 본 결과, 나의 경우에는 홈페이지 처음 들어올때 부르는 resources.jsp에서 먼저 부르도록 했더니 적용이 되었다. 확실하게 사용 시점보다 더 빨리 폴리필이 로드되어야 하는게 맞나보다.
+이것 저것을 시도해 본 결과, 나의 경우에는 메일쓰기 팝업인 write.jsp에 넣는 대신 홈페이지 처음 들어올때 부르는 resources.jsp에서 먼저 부르도록 했더니 적용이 되었다. <br>
+확실하게 사용 시점보다 더 빨리 폴리필이 로드되어야 하는게 맞나보다.
 
 <figure>
     <img src='{{ "/assets/images/2022-04-07/Untitled 3.png" | relative_url }}' width="850" />
-    <figcaption>polyfill 소스 내부에 있는 속성을 못읽는다고...?</figcaption>
+    <figcaption>resources.jsp</figcaption>
 </figure>
 
 <figure>
