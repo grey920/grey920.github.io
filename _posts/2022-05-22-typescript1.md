@@ -12,9 +12,9 @@ toc_icon: "list"
 # header:
   # teaser: /assets/images/2022-04-03/after.png
 ---
-## tl;dr
+<!-- ## tl;dr -->
 
-## 1. 타입스크립트, 어떻게 생긴 언어인가
+## 1. 타입스크립트, <span class="custom-color">어떻게</span> 생긴 언어인가
 
 ### strongly typed programming language
 
@@ -104,7 +104,7 @@ toc_icon: "list"
     - [Duck Typing](https://www.notion.so/duck-typing-8941285ea9454ae88c940e70aa5fa6a4) : 객체의 변수 및 메서드의 집합이 객체의 타입을 결정한다. 동적 타이핑의 한 종류
     - Structural Subtyping: 객체의 실제 구조나 정의에 따라 타입을 결정한다
 
-## 3. 타입스크립트, 왜 써야 하는가
+## 3. 타입스크립트, <span class="custom-color">왜</span> 써야 하는가
 
 ### 자바스크립트의 단점
 
