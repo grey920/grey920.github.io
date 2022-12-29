@@ -180,7 +180,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Conversion
 markdown: kramdown
-highlighter: true #rouge
+#highlighter: rouge #true로 하면 에러는 없어지는데.. 대신 코드블럭에 색이 없어짐
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
@@ -188,6 +188,7 @@ incremental: false
 # Markdown Processing
 kramdown:
   input: GFM
+  syntax_highlighter: rouge
   hard_wrap: false
   auto_ids: true
   footnote_nr: 1
