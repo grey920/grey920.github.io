@@ -1,16 +1,13 @@
 ---
 title: "[Typescript] Class"
-excerpt: ""
 categories:
-  - Client
+- Client
 tags:
-  - Typescript
+- Typescript
 toc: true
 toc_sticky: true
 toc_label: 목차
-toc_icon: "list"
-# header:
-  # teaser: /assets/images/2022-04-03/after.png
+toc_icon: list
 ---
 
 ## 타입스크립트에서 Class 만드는 법
@@ -96,7 +93,14 @@ toc_icon: "list"
 
 - User 클래스를 상속받는 Player 클래스에서는 추상메서드인 getNickName()을 무조건 구현해야 하기 때문에 타입스크립트에서 에러를 출력하고 있다.
 
+
+
+
+
+
 Player 클래스에서 getNickName()을 구현해보자.
+
+
 <figure>
   <img src='{{ "/assets/images/2022-06-01/typescript/Untitled%209.png" | relative_url }}' width="600" />
 </figure>
