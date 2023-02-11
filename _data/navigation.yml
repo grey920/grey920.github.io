@@ -36,6 +36,7 @@ docs:
     #     url: /docs/layouts/
 
   - title: Server
+    url: /categories/server/
     # children:
     #   - title: "Working with Posts"
     #     url: /docs/posts/
@@ -49,6 +50,7 @@ docs:
     #     url: /docs/utility-classes/
 
   - title: Client
+    url: /categories/client/
     children:
       # - title: "Vue3 & Nuxt"
       # url: /docs/stylesheets/
