@@ -127,8 +127,8 @@
 	}
 
 	img {
-		max-width: 180px;
-		max-height: 180px;
+		max-width: 150px;
+		max-height: 150px;
 		border-radius: 50%; // 직사각형 그대로 사용시 주석처리
 
 		@include breakpoint($large) {
