@@ -272,6 +272,7 @@ defaults:
       sidebar:
         nav: "docs"
       read_time: true
+      show_date: true
       comments: true
       share: true
       related: true
