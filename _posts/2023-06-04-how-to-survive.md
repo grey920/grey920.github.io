@@ -2,7 +2,7 @@
 title: "예민한 개발자가 살아남는 법"
 excerpt: "이렇게 예민하고 유약한 녀석에게 개발자는 굉장히 어렵고 힘든 직업이죠(대충 베어그릴스 짤)"
 categories:
-    - Server
+  - Memo
 tags:
   - 생존왕
   - 글또
@@ -80,12 +80,13 @@ header:
 
 
 #### 2.업무 외적으로 잔잔하게 스트레스가 쌓인다면
-- 운동
+- 운동 <br>
 <figure>
   <img src="https://r2.jjalbot.com/2023/03/yYc9GsFbYL.jpeg" width="400"/>
   <figcaption>아무리 삶이 힘들어도 울지 않는 이유</figcaption>
 </figure>
-- 고정스케줄
+- 고정스케줄 <br>
+
 
 ## 앞으로는 어떻게 살아남죠?
 사실 잘 모르겠습니다(머쓱) <br>
