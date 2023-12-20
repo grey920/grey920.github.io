@@ -2,10 +2,10 @@
 title: "자바에서 공변성(covariance), 반공변성(contravariance) 그리고 무변성 (invariance)"
 excerpt: ""
 categories:
-  - CS
+  - Server
 tags:
-  - JS 스터디
-  - 네트워크
+  - Java
+  - covariant
 toc: true
 toc_sticky: true
 toc_label: "자바에서 공변성, 반공변성 그리고 무변성"
