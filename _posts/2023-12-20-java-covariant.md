@@ -8,12 +8,11 @@ tags:
   - 네트워크
 toc: true
 toc_sticky: true
-toc_label: "자바에서 공변성(covariance), 반공변성(contravariance) 그리고 무변성 (invariance)"
+toc_label: "자바에서 공변성, 반공변성 그리고 무변성"
 toc_icon: "edit"
 # classes: wide
 header:
-  overlay_image: 'https://images.velog.io/images/jhlee508/post/516e42f6-5c80-4919-ab07-c8fa54ab574d/%EC%BB%B4%ED%93%A8%ED%84%B0%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC.jpg'
-  teaser: /assets/images/2022-01-02/Untitled.png #/assets/images/2022-01-02/Untitled.png
+  teaser: /assets/images/2023/12-20/자바의공변.png #/assets/images/2022-01-02/Untitled.png
 ---
 
 ## 글을 쓰게 된 이유
