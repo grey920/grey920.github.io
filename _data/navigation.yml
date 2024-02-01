@@ -18,7 +18,7 @@ docs:
   - title: "😎 About Me"
     children:
       - title: "포트폴리오"
-        url: /random/
+        url: /portfolio/
       - title: "사이드 프로젝트"
         url: /random/
   # - title: TIL
