@@ -95,7 +95,7 @@ analytics:
 # Site Author
 author:
   name: "Grey"
-  avatar: "/assets/images/profile/profile_bondee.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar: "/assets/images/profile/grey-hoodie-character.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "<p><b>리얼타임 주니어 개발자 육성 다이어리 (?!)</b></p> 칭찬을 받으면 성장이 빨라져요!<br>"
   #location: "Republic of Korea, Seoul"
   email: "charminggw@gmail.com"

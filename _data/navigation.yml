@@ -2,12 +2,12 @@
 main:
   - title: "Categories"
     url: /categories/
-  - title: "Tags"
-    url: /tags/
+  # - title: "Tags"
+  #   url: /tags/
   # - title: "About"
   #   url: /about/
-  #- title: "연도별 포스트"
-  #  url: /posts/
+  - title: "Posts"
+    url: /posts/
   - title: "Random"
     url: /random/
   - title: "Search"
@@ -20,7 +20,7 @@ docs:
       - title: "포트폴리오"
         url: /portfolio/
       - title: "사이드 프로젝트"
-        url: /random/
+        url: /project/
   # - title: TIL
   #   children:
   #     - title: "오늘의 메모"
