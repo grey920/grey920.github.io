@@ -63,8 +63,8 @@ docs:
       # url: /docs/javascript/
 
   - title: Etc
-    # children:
-    #   - title: "Stylesheets"
-    #     url: /docs/stylesheets/
+    children:
+      - title: "생각 모음"
+        url: /categories/Memo/
     #   - title: "JavaScript"
     #     url: /docs/javascript/
