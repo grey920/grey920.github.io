@@ -15,27 +15,32 @@ main:
 
 #좌측 사이드바 메뉴
 docs:
-  - title: TIL
+  - title: "😎 About Me"
     children:
-      - title: "오늘의 메모"
-        url: /memo/2022memo/
-      - title: "에러노트"
-        url: /categories/ErrorNote/
-  - title: Book Log
-    url: /categories/booklog/
-    children:
-      - title: "실용주의 프로그래머"
-        url: /tags/#pragmatic
-      - title: "클린코드"
-        url: /tags/#cleancode
+      - title: "포트폴리오"
+        url: /random/
+      - title: "사이드 프로젝트"
+        url: /random/
+  # - title: TIL
+  #   children:
+  #     - title: "오늘의 메모"
+  #       url: /memo/2022memo/
+  #     - title: "에러노트"
+  #       url: /categories/ErrorNote/
+  # - title: Book Log
+  #   url: /categories/booklog/
+  #   children:
+  #     - title: "실용주의 프로그래머"
+  #       url: /tags/#pragmatic
+  #     - title: "클린코드"
+  #       url: /tags/#cleancode
     #   - title: "UI Text"
     #     url: /docs/ui-text/
     #   - title: "Authors"
     #     url: /docs/authors/
     #   - title: "Layouts"
     #     url: /docs/layouts/
-
-  - title: Server
+  - title: 🤖 Server
     url: /categories/server/
     # children:
     #   - title: "Working with Posts"
@@ -49,7 +54,7 @@ docs:
     #   - title: "Utility Classes"
     #     url: /docs/utility-classes/
 
-  - title: Client
+  - title: 🖼️ Client
     url: /categories/client/
     children:
       # - title: "Vue3 & Nuxt"
