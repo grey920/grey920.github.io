@@ -3,9 +3,16 @@ title: "포트폴리오"
 permalink: /portfolio/ # permalink : 이 페이지가 블로그 내에서 어느 주소에서 표시될지를 경정하는 주소 / 홈페이지 베이스 주소 + permalink가 이 페이지의 주소가 된다.
 layout: single
 ---
-
-# 정겨운
-Java 백엔드 개발자
+<div style="
+    display: flex;
+    justify-content: space-between;
+">
+    <div>
+        <h1>정겨운</h1>
+        <p>Java 백엔드 개발자</p>
+    </div>
+    <img src='https://github.com/grey920/grey920.github.io/assets/58028215/c1e883e1-296b-4705-899c-ae6c6f87a77a'        width='150' height='150' style="border-radius: 20%;">
+</div>
 
 
 ## 👩‍🔧 About Me
@@ -75,10 +82,9 @@ Java 백엔드 개발자
 ### 그룹웨어 웹 & 모바일
 #### ⚠️ 문제 상황
 - 그룹웨어 앱 사용자로부터 결재 문서를 보거나 모바일로 작업하기 불편하고, 메일이나 게시판에서 문서 파일을 볼 때 매번 다운로드를 받아야 해서 불편하다는 의견이 다수 접수됨
-
-#### 🛠️ 해결방안
 > 사용자가 느끼는 불편함의 핵심은 원하는 기능을 수행하기까지 거쳐야 하는 단계가 많다는 것
 
+#### 🛠️ 해결방안
 - 결재 관련 프로세스 개선
     - 결재 양식 조회
         - [기존] 결재 문서 조회시 양식 사이즈가 모바일의 스크린보다 커서 사용자가 손가락으로 양식을 움직여서 확인해야 함
