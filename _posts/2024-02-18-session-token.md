@@ -4,8 +4,10 @@ excerpt: ""
 categories:
   - Server
 tags:
-  - Java
-  - covariant
+  - Authentication
+  - Athorization
+  - Session
+  - Token
 toc: true
 toc_sticky: true
 toc_label: "내 프로젝트에 맞는 사용자 인증 방식은 뭘까?"

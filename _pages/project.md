@@ -8,5 +8,6 @@ layout: single
 해당 프로젝트를 진행하며 고민한 점과 경험한 이슈, 공부한 것 등을 정리했습니다.
 
 1. [프로젝트에 적합한 패키지 모듈화](msm/msm-1)
+2. [로그인 방식 고민하기 > jwt 토큰](https://grey920.github.io/server/session-token/)
 
 
