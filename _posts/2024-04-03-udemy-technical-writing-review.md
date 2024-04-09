@@ -11,7 +11,7 @@ toc_label: "목차"
 toc_icon: "edit"
 # classes: wide
 header:
-  teaser: /assets/images/2024/04-03/테크니컬라이팅_배너.jpg #/assets/images/2022-01-02/Untitled.png
+  teaser: "/assets/images/글또_유데미.png" #/assets/images/2022-01-02/Untitled.png
 ---
 
 ## 서론
