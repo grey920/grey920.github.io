@@ -4,7 +4,10 @@ excerpt: ""
 categories:
   - Review
 tags:
-  - Writing
+  - Udemy
+  - Java
+  - 성능최적화
+  - 멀티스레딩
 toc: true
 toc_sticky: true
 toc_label: "목차"
