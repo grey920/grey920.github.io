@@ -2,7 +2,7 @@
 title: "[항해99 취업 리부트 코스 학습일지][day1] 항해99, 대단히 반갑습니다 상당히 고맙습니다~"
 excerpt: ""
 categories:
-  - Review
+  - TIL
 tags:
   - 개발자포트폴리오
   - 개발자이력서
