@@ -8,7 +8,7 @@ main:
   #   url: /about/
   - title: "Posts"
     url: /posts/
-  - title: "Random"
+  - title: "Random 🎲"
     url: /random/
   - title: "Search"
     url: /search/
