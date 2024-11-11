@@ -15,12 +15,12 @@ main:
 
 #좌측 사이드바 메뉴
 docs:
-  - title: "😎 About Me"
-    children:
-      - title: "포트폴리오"
-        url: /portfolio/
-      - title: "사이드 프로젝트"
-        url: /sideproject/
+  # - title: "😎 About Me"
+    # children:
+      # - title: "포트폴리오"
+        # url: /portfolio/
+      # - title: "사이드 프로젝트"
+        # url: /sideproject/
   # - title: TIL
   #   children:
   #     - title: "오늘의 메모"
@@ -34,14 +34,8 @@ docs:
   #       url: /tags/#pragmatic
   #     - title: "클린코드"
   #       url: /tags/#cleancode
-    #   - title: "UI Text"
-    #     url: /docs/ui-text/
-    #   - title: "Authors"
-    #     url: /docs/authors/
-    #   - title: "Layouts"
-    #     url: /docs/layouts/
-  - title: 🤖 Server
-    url: /categories/server/
+  # - title: 🤖 Server
+    # url: /categories/server/
     # children:
     #   - title: "Working with Posts"
     #     url: /docs/posts/
@@ -54,17 +48,24 @@ docs:
     #   - title: "Utility Classes"
     #     url: /docs/utility-classes/
 
-  - title: 🖼️ Client
-    url: /categories/client/
-    children:
+  # - title: 🖼️ Client
+    # url: /categories/client/
+    # children:
       # - title: "Vue3 & Nuxt"
       # url: /docs/stylesheets/
       # - title: "TypeScript"
       # url: /docs/javascript/
 
-  - title: Etc
+  - title: 📱 Product
     children:
-      - title: "생각 모음"
+      - title: "인사이트"
+        url: /product/insight/
+      - title: "프로덕트 스터디"
+        url: /product/study/
+
+  - title: 🗒️ Memo
+    children:
+      - title: "회고"
         url: /categories/Memo/
-    #   - title: "JavaScript"
-    #     url: /docs/javascript/
+      - title: "일상"
+        url: /mystory/
