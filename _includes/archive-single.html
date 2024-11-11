@@ -14,6 +14,9 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
+        <img src="{{ teaser | relative_url }}" alt="">
+      </div>
+      <!-- <div class="archive__item-teaser">
         <img src=
           {% if teaser contains "://" %}
             "{{ teaser }}"
@@ -21,8 +24,19 @@
             "{{ teaser | relative_url }}"
           {% endif %}
           alt="">
+      </div> -->
+    {% endif %}
+
+    <!-- 블로그 썸네일 클래스 -->
+    {% if include.type == "list" and teaser %}
+      <div class="archive__item-teaser_list">
+        <img src="{{ teaser | relative_url }}" alt="">
       </div>
     {% endif %}
+
+
+    <div class="archive__item-postbox"> <!-- 블로그 글 클래스 "https://sun0te.github.io/blog/blog_custom/"-->
+
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
@@ -46,5 +60,8 @@
       <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%B %d %Y" }}</p>
     {% endif %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+    {% if site.category_archive.type and post.categories[0] and site.tag_archive.type and post.tags[0] %}
+    {% endif %}
+    </div>
   </article>
 </div>
