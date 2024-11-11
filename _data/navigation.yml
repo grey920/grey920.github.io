@@ -59,13 +59,13 @@ docs:
   - title: 📱 Product
     children:
       - title: "인사이트"
-        url: /product/insight/
+        url: /categories/product-insight/
       - title: "프로덕트 스터디"
-        url: /product/study/
+        url: /categories/product-study/
 
   - title: 🗒️ Memo
     children:
       - title: "회고"
         url: /categories/Memo/
       - title: "일상"
-        url: /mystory/
+        url: /categories/mystory/
