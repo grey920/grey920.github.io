@@ -152,7 +152,7 @@
 
     background-color: mix(rgb(122, 122, 122), $background-color, 10%);
     backdrop-filter: blur(10px);
-    width: 15em;
+    width: 10em;
     max-height: 130px;
     text-align: center;
     vertical-align: middle;
@@ -167,6 +167,7 @@
 
     @include breakpoint($small) {
       min-height: 130px;
+      width: 15em;
       background-size: contain; //비율 강제 고정
     }
 
