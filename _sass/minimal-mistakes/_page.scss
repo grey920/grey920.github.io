@@ -139,6 +139,10 @@ body {
 				margin-top: -($indent-var);
 			}
 		}
+
+		strong { /* 241120 */
+			color: $strong-color;
+		}
 	}
 
 	a:not(.btn) {
