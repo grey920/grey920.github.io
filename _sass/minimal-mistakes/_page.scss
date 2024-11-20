@@ -139,10 +139,6 @@ body {
 				margin-top: -($indent-var);
 			}
 		}
-
-		strong { /* 241120 */
-			color: $strong-color;
-		}
 	}
 
 	a:not(.btn) {
@@ -181,6 +177,10 @@ body {
 		p {
 			margin: 0.5em;
 		}
+	}
+
+	strong { /* 241120 */
+		color: $strong-color;
 	}
 }
 
