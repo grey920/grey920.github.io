@@ -13,7 +13,7 @@ toc_label: 목차
 toc_icon: "cog"
 # classes: wide
 header:
-  teaser: https://yozm.wishket.com/media/news/2826/image1.png
+  teaser: https://cdn.pixabay.com/photo/2022/07/24/11/35/women-7341444_1280.jpg
 ---
 
 ## 내가 되고 싶은 PM의 모습
