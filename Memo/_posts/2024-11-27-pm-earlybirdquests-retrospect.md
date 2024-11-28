@@ -2,7 +2,7 @@
 title: "제로베이스 PM 스쿨 얼리버드 퀘스트 후기"
 excerpt: ""
 categories:
-    - product-study 
+    - Memo 
 tags:
   - pm
   - 제로베이스
